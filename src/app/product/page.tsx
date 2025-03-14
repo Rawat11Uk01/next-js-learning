@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: "This is a product page",
 };
 
-export default function ProductPage() {
+export default async function ProductPage() {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  throw new Error("Error");
   return <div>I m product page</div>;
 }

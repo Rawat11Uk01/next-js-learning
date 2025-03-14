@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProductLayout({
+export default async function ProductLayout({
   children,
 }: {
   children: React.ReactNode;
